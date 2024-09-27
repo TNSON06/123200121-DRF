@@ -77,10 +77,15 @@ WSGI_APPLICATION = 'djangoTutorial.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'appdb',
+        'USER': 'root',
+        'PASSWORD': 'tns2k2vv',
+        'HOST': '127.0.0.1',
     }
 }
+
+AUTH_USER_MODEL = 'myapp.User'
 
 
 # Password validation
